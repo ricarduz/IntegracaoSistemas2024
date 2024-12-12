@@ -1,0 +1,31 @@
+﻿<!--/*
+ * Disciplina: Integração de Sistemas
+ * Autor: Ricardo Isaías Serafim
+ * Email: 2302605@estudante.uab.pt
+ * Descrição: Este arquivo de configuração (.csproj) define o projeto para um cliente gRPC que interage com o sistema Euromil. Ele especifica o framework, os pacotes necessários e o processamento do arquivo .proto.
+ */-->
+
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<!-- Define o tipo de saída e o framework alvo do projeto -->
+	<PropertyGroup>
+		<OutputType>Exe</OutputType> <!-- Indica que o projeto gera um executável -->
+		<TargetFramework>net7.0</TargetFramework> <!-- Define o framework como .NET 7.0 -->
+	</PropertyGroup>
+
+	<!-- Inclui pacotes NuGet necessários para o funcionamento do cliente gRPC -->
+	<ItemGroup>
+		<PackageReference Include="Grpc.Net.Client" Version="2.67.0" />	<!-- Pacote para serialização de mensagens Protobuf -->
+		<PackageReference Include="Google.Protobuf" Version="3.29.1" />	<!-- Ferramentas para compilar arquivos .proto em C# -->
+		<PackageReference Include="Grpc.Tools" Version="2.68.1">
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		  <PrivateAssets>all</PrivateAssets> <!-- Evita que o pacote seja exposto a projetos dependentes -->
+		</PackageReference>
+	</ItemGroup>
+
+	<!-- Define o arquivo .proto a ser processado pelo Grpc.Tools -->
+	<ItemGroup>
+		<Protobuf Include="Protos/euromil.proto" GrpcServices="Client" />	<!-- Configuração para gerar código cliente a partir do .proto -->
+	</ItemGroup>
+
+</Project>

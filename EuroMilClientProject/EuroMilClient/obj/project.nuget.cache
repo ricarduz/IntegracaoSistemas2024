@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "yTAgKX+ua2I=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ricar\\OneDrive - Universidade Aberta\\Ano 1\\Semestre 3\\Integração de Sistemas\\Semana 5\\EuroMilClient\\EuroMilClient.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ricar\\.nuget\\packages\\google.protobuf\\3.29.1\\google.protobuf.3.29.1.nupkg.sha512",
+    "C:\\Users\\ricar\\.nuget\\packages\\grpc.core.api\\2.67.0\\grpc.core.api.2.67.0.nupkg.sha512",
+    "C:\\Users\\ricar\\.nuget\\packages\\grpc.net.client\\2.67.0\\grpc.net.client.2.67.0.nupkg.sha512",
+    "C:\\Users\\ricar\\.nuget\\packages\\grpc.net.common\\2.67.0\\grpc.net.common.2.67.0.nupkg.sha512",
+    "C:\\Users\\ricar\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,22 @@
+/* 
+ * Disciplina: Integração de Sistemas
+ * Autor: Ricardo Isaías Serafim
+ * Email: 2302605@estudante.uab.pt
+ * Descrição: este programa implementa um cliente REST para interagir com o sistema RegisterEuromil. Realiza requisições HTTP para obter um cheque digital com base na identificação da conta de crédito e no valor solicitado. O resultado é exibido diretamente na consola.
+ */
+ 
+ syntax = "proto3";
+
+package Euromil;
+
+service Euromil {
+  rpc RegisterEuroMil (RegisterRequest) returns (RegisterReply);
+}
+
+message RegisterRequest {
+  string key = 1;
+  string checkid = 2;
+}
+
+message RegisterReply {
+  string message = 1;

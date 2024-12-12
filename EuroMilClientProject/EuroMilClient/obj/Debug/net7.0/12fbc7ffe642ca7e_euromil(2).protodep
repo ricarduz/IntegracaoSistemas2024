@@ -1,0 +1,2 @@
+obj\Debug\net7.0\Protos/Euromil.cs \
+obj\Debug\net7.0\Protos/EuromilGrpc.cs: Protos/euromil.proto
